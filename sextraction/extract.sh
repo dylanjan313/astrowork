@@ -1,16 +1,9 @@
 # Le but de ce programme est de lancer sextractor sur toutes les images réduites
 # dans les filtres rouge et vert.
 
-rm m13-green-final/*.dat
-rm m13-red-final/*.dat
+rm ../output/m13-*.dat
 
-for image in m13-green-final/*
-do
-	sextractor "$image"
-	mv test.cat "$image".dat
-done
-
-for image in m13-red-final/*
+for image in ../output/m13-*.fits
 do
 	sextractor "$image"
 	mv test.cat "$image".dat
