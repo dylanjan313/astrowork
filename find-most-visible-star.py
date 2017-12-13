@@ -15,12 +15,11 @@ for ligne in lignes :
 
     colonnes = ligne.split()
 
-    etoile = [
-        colonnes[4],
-        colonnes[5],
-        colonnes[2]
-    ]
+    x = colonnes[4]
+    y = colonnes[5]
+    magn = colonnes[2]
 
+    etoile = [x, y, magn]
     etoiles.append(etoile)
 
 etoiles = sorted(etoiles, key = lambda etoile: etoile[2])
