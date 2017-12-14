@@ -69,7 +69,7 @@ for j in range(0 ,16) :
         row = []
         x = star_red[0]
         y = star_red[1]
-        magn_red = star[2]
+        magn_red = star_red[2]
 
         print("////////////////////////")
         print("Image : " + str(j))
