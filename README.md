@@ -1,8 +1,6 @@
 # Pré-requis
 
-Ces scripts requièrent astropy et scipy (en particulier numpy)
-
-Tenir compte du fait que Sextractor utilise le coin inférieur gauche comme origine et PIL (manipulation d'images) utilise le coin supérieur gauche
+Ces scripts requièrent astropy, scipy (en particulier numpy) et scikit-learn.
 
 # Exécution du code
 
@@ -12,5 +10,6 @@ python3 reduction.py
 cd sextraction
 bash extract.sh
 cd ..
-python3 analyse.py
+python3 identification.py
+python3 hr.py
 ```

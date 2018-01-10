@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import kde
 
+
+CONSTANTE = 16.5593
+
 stars = np.loadtxt("output/stars-0.txt")
 
 x = []
@@ -23,7 +26,7 @@ for i in range(0, len(stars)) :
     indice = stars[i][3] - stars[i][4] # blue - green
 
     x.append(indice)
-    y.append(stars[i][4] + 15)
+    y.append(stars[i][4] + CONSTANTE)
 
 
 # Evaluate a gaussian kde on a regular grid of nbins x nbins
